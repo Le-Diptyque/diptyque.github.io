@@ -1,0 +1,64 @@
+.collectif {
+    min-height: 100vh;
+    width: 100%;
+
+    &__story {
+        padding: 22vh 1.5rem 1rem 1.5rem;
+
+        h1{
+            font-size: 1.5rem;
+            font-family: $roboto;
+            font-weight: 600;
+            text-transform: uppercase;
+            color: $myRed;
+            margin: 1rem 0;
+        }
+
+        p {
+            text-align: justify;
+            font-family: $roboto;
+            font-size: 1.1rem;
+            margin-bottom: 1rem;
+        }
+
+        span {
+            display: block;
+            margin-bottom: 1rem;
+            font-family: $quicksand;
+            font-size: 1.1rem;
+            font-weight: 600;
+            font-style: italic;
+            line-height: 1.4rem;
+            color: $myRed;
+        }
+
+        img{
+            width: 100%;
+        }
+
+        figure {
+            margin-bottom: 1rem;
+
+            figcaption {
+                font-family: $quicksand;
+                font-size: .9rem;
+            }
+        }
+    }
+
+    footer {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 1rem;
+
+        .social-icons > * {
+            margin: 1rem;
+            color: $blackText;
+            @include transition-color;
+    
+            &:hover {
+                color: $myRed;
+            }
+        }
+    }
+}

@@ -1,0 +1,150 @@
+header {
+    background: $bgHeader;
+    position: fixed;
+    width: 100%;
+    
+    .header-top {
+        position: relative;
+    }
+
+    .header-top a{
+        display: block;
+        height: 15vh;
+        width: 100%;
+        background-image: url(/img/logo-black.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center center;
+    }
+
+    .nav-btn {
+        margin: 0 auto 1.5rem auto;
+        width: 2rem;
+        height: 2rem;
+        position: relative;
+        cursor: pointer;
+
+        &__burger {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            height: 2px;
+            width: 100%;
+            border-radius: 999px;
+            background: $blackText;
+            transition: background 100ms linear 250ms;
+
+            &::before {
+                content: "";
+                position: absolute;
+                top: -.75rem;
+                height: 2px;
+                width: 100%;
+                border-radius: 999px;
+                background-color: $blackText;
+                transition: transform 250ms linear,
+                top 250ms linear;
+            }
+
+            &::after {
+                content: "";
+                position: absolute;
+                top: .75rem;
+                height: 2px;
+                width: 100%;
+                border-radius: 999px;
+                background-color: $blackText;
+                transition: transform 250ms linear
+                ,top 250ms linear;
+            }
+        }
+
+        small {
+            position: absolute;
+            top: 100%;
+        }
+
+        &__burger.open {
+            background: transparent;
+            transition: background 100ms linear;
+
+            &::before {
+                transform: rotate(45deg);
+                top: 0;
+            }
+
+            &::after {
+                transform: rotate(-45deg);
+                top: 0;
+            }
+        }
+
+        small {
+            position: absolute;
+            bottom: -.5rem;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+
+    .header-nav {
+        background: $bgHeader;
+        position: absolute;
+        width: 100%;
+        height: auto;
+        transform: translateX(-100%);
+        transition: transform 250ms ease-in;
+
+        &.open {
+            transform: translateX(0);
+        }
+
+        .nav-list {
+            padding: 3rem 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+
+            &__item {
+                width: 50vw;
+                margin-bottom: 1rem;
+                text-align: center;
+                position: relative;
+
+                &::after {
+                    content: "";
+                    position: absolute;
+                    right: 1rem;
+                    height: 120%;
+                    width: 3px;
+                    border-right: 3px dotted $myRed;
+                    transition: height 200ms ease-out;
+                }
+
+                &.active > a{
+                    color: $myRed;
+                }
+
+                &.active::after {
+                    display: none;
+                }
+
+                &:hover {
+                    * {
+                        color: $myRed;
+                    }
+
+                    &::after {
+                        height: 0;
+                    }
+                }
+            }
+
+            &__link {
+                color: $blackText;
+                font-size: 1.5rem;
+            }
+        }
+    }
+}

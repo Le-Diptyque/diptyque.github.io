@@ -1,0 +1,29 @@
+@import "./config";
+@import "./variables";
+@import "./index.styles/header.index";
+@import "./index.styles/responsive.index";
+
+.index {
+    width: 100%;
+    min-height: 100vh;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+
+    main {
+        display: flex;
+        justify-content: center;
+        padding: .5rem 0;
+    
+        .social-icons > * {
+            margin: 1rem;
+            color: $blackText;
+            @include transition-color;
+    
+            &:hover {
+                color: $myRed;
+            }
+        }
+    }
+}
+
