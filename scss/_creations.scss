@@ -1,0 +1,70 @@
+.creations {
+    min-height: 100vh;
+    width: 100%;
+
+    main {
+        padding: 22vh 1.5rem 1rem 1.5rem; 
+
+        .creations__list {
+            display: flex;
+            flex-wrap: wrap;
+
+            .box {
+                flex: 1 1 25%;
+                aspect-ratio: 1 / 1;
+                margin: 1rem;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                a {
+                    text-align: center;
+                    font-size: 3rem;
+                    font-family: $quicksand;
+                    color: $myRed;
+                }
+            }
+
+            .box-1 {
+                background-image: url(/img/creations/ldp.jpeg);
+                background-size: cover;
+                background-position: center center;
+            }
+
+            .box-2 {
+                background-image: url(/img/creations/ldp.jpeg);
+                background-size: cover;
+                background-position: center center;
+            }
+
+            .box-3 {
+                background-image: url(/img/creations/ldp.jpeg);
+                background-size: cover;
+                background-position: center center;
+            }
+
+            .box-4 {
+                background-image: url(/img/creations/ldp.jpeg);
+                background-size: cover;
+                background-position: center center;
+            }
+        }
+    }
+
+    
+    footer {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 1rem;
+
+        .social-icons > * {
+            margin: 1rem;
+            color: $blackText;
+            @include transition-color;
+    
+            &:hover {
+                color: $myRed;
+            }
+        }
+    }
+}

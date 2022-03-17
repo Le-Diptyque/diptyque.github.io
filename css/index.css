@@ -58,7 +58,7 @@ a {
   height: 30vh;
   width: 100%;
   background-image: url(/img/home-desktop.jpg);
-  background-size: cover;
+  background-size: contain;
   background-repeat: no-repeat;
   background-position: center center;
 }
@@ -144,7 +144,8 @@ a {
     height: 15vh;
   }
   .index header .header-main {
-    height: 60vh;
+    background-image: url(/img/home-desktop-2.jpeg);
+    height: 50vh;
     background-position: center center;
   }
   .index header .header-nav .nav-list {
