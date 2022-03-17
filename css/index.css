@@ -147,6 +147,8 @@ a {
     background-image: url(/img/home-desktop-2.jpeg);
     height: 50vh;
     background-position: center center;
+    background-size: cover;
+    margin-top: 2rem;
   }
   .index header .header-nav .nav-list {
     -webkit-box-orient: horizontal;
@@ -176,7 +178,7 @@ a {
     height: 0;
   }
   .index header .header-nav .nav-list__link {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
 }
 

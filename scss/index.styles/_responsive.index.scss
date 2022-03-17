@@ -9,6 +9,8 @@
                 background-image: url(/img/home-desktop-2.jpeg);
                 height: 50vh;
                 background-position: center center;
+                background-size: cover;
+                margin-top: 2rem;
             }
     
             .header-nav {
@@ -39,7 +41,7 @@
                     } 
                     
                     &__link {
-                        font-size: 2rem;
+                        font-size: 1.5rem;
                     }
                 }
             }
