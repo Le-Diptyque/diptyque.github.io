@@ -281,6 +281,7 @@ header .header-nav .nav-list__link {
     display: none;
   }
   header .header-nav {
+    padding: 1rem 0;
     background: #fff;
     position: relative;
     -webkit-transform: translateX(0);
@@ -415,23 +416,29 @@ header .header-nav .nav-list__link {
 }
 
 .creations main {
-  padding: 22vh 1.5rem 1rem 1.5rem;
+  padding-top: 20vh;
 }
 
 .creations main .creations__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
 
 .creations main .creations__list .box {
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1 25%;
-          flex: 1 1 25%;
-  aspect-ratio: 1 / 1;
+  -ms-flex-preferred-size: 75%;
+      flex-basis: 75%;
+  max-width: 300px;
+  aspect-ratio: 1;
   margin: 1rem;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.5), 0 4px 6px -4px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.5), 0 4px 6px -4px rgba(0, 0, 0, 0.5);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -481,7 +488,7 @@ header .header-nav .nav-list__link {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-bottom: 1rem;
+  margin: 1rem 0;
 }
 
 .creations footer .social-icons > * {
@@ -493,5 +500,37 @@ header .header-nav .nav-list__link {
 
 .creations footer .social-icons > *:hover {
   color: #b22222;
+}
+
+@media screen and (min-width: 768px) {
+  .creations {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .creations main {
+    -webkit-box-flex: 1;
+        -ms-flex: auto;
+            flex: auto;
+    padding-top: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  .creations main .creations__list {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
 }
 /*# sourceMappingURL=main.css.map */
