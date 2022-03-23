@@ -416,7 +416,7 @@ header .header-nav .nav-list__link {
 }
 
 .creations main {
-  padding-top: 20vh;
+  padding-top: 25vh;
 }
 
 .creations main .creations__list {
@@ -448,6 +448,15 @@ header .header-nav .nav-list__link {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-transition: -webkit-transform 200ms ease-in-out;
+  transition: -webkit-transform 200ms ease-in-out;
+  transition: transform 200ms ease-in-out;
+  transition: transform 200ms ease-in-out, -webkit-transform 200ms ease-in-out;
+}
+
+.creations main .creations__list .box:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
 }
 
 .creations main .creations__list .box a {
@@ -513,10 +522,11 @@ header .header-nav .nav-list__link {
             flex-direction: column;
   }
   .creations main {
-    -webkit-box-flex: 1;
-        -ms-flex: auto;
-            flex: auto;
     padding-top: 0;
+    padding-bottom: 1.5rem;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -524,13 +534,18 @@ header .header-nav .nav-list__link {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .creations main .creations__list {
+    padding-top: calc(50vh - 250px);
     -webkit-box-pack: space-evenly;
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
   }
-  .creations main .creations__list {
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
+  .creations main .creations__list .box {
+    max-width: 250px;
   }
 }
 /*# sourceMappingURL=main.css.map */
