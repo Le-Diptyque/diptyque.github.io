@@ -206,7 +206,7 @@ a {
 }
 
 .index main .social-icons > * {
-  font-size: .7rem;
+  font-size: 1rem;
   margin: 1rem;
   color: #0e0e0e;
   -webkit-transition: color 250ms ease-in;

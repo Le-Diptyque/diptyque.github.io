@@ -1,9 +1,0 @@
-{
-    "version": 3,
-    "mappings": "",
-    "sources": [
-        "../scss/creations.styles/lvec.scss"
-    ],
-    "names": [],
-    "file": "lvec.css"
-}
