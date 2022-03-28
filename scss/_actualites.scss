@@ -1,0 +1,149 @@
+.actualites {
+    min-height: 100vh;
+    width: 100%;
+
+    main {
+        padding-top: 25vh;
+
+        .actu__list {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+
+            .box {
+                position: relative;
+                flex-basis: 90%;
+                max-width: 300px;
+                aspect-ratio: 1;
+                margin: 1rem;
+                padding: 1rem;
+                border-radius: 5px;
+                box-shadow: 0 10px 15px -3px rgba(0, 0, 0, .8);
+                color: white;      
+                display: flex;
+                flex-direction: column;
+                transition: transform 200ms ease-in-out;
+
+                &:hover {
+                    transform: scale(1.05);
+                }
+
+                h2 {
+                    width: auto;
+                    margin: 0 auto 2rem auto ;
+                    font-size: 3.2rem;
+                    font-family: $roboto;
+                    text-transform: uppercase;
+                    color: #b2cce5;
+                }
+
+                h2 small {
+                    display: block;
+                    font-size: 1.2rem;
+                    color: white;
+                    text-transform: none;
+                }
+
+                .date-list {
+                    flex: 1;
+                    font-size: 1rem;
+                    font-weight: 600;
+
+                    li {
+                        margin-bottom: 1rem;
+                        line-height: 1.3rem;
+                        text-align: justify;
+                    }
+
+                    a {
+                        text-decoration: underline;
+                        color: white;
+                        font-weight: 500;
+
+                        &:hover {
+                            color: $myRed;
+                        }
+                    }
+                }
+
+
+            }
+
+            .box-1 {
+                background-image:url(/img/creations/projetv.jpeg);
+                background-size: cover;
+                background-position: center center;
+            }
+
+            .box-2 {
+                background-image:url(/img/creations/ldp.jpeg);
+                background-size: cover;
+                background-position: center center;
+
+                h2 {
+                    color: $myRed;
+                }
+            }
+
+
+        }
+    }
+
+    
+    footer {
+        display: flex;
+        justify-content: center;
+        margin: 1rem 0;
+
+        .social-icons > * {
+            margin: 1rem;
+            color: $blackText;
+            @include transition-color;
+    
+            &:hover {
+                color: $myRed;
+            }
+        }
+    }
+}
+
+@include media-md {
+    .actualites {
+        display: flex;
+        flex-direction: column;
+
+
+        main{
+            padding-top: 2%;
+            padding-bottom: 1.5rem;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            .actu__list{
+                justify-content: space-evenly;
+
+                .box {
+                    max-width: 500px;
+                    padding: 1.5rem;
+
+                    h2 {
+                        font-size: 4rem;
+                    }
+                    
+                    .date-list {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-evenly;
+                        font-size: 1.5rem;
+
+                        li {
+                            line-height: 1.8rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
