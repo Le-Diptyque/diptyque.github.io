@@ -270,14 +270,14 @@ header .header-nav .nav-list__link {
 
 @media screen and (min-width: 768px) {
   header .header-nav .nav-list__link {
-    font-size: 2rem;
+    font-size: 1.7rem;
   }
 }
 
 @media screen and (min-width: 768px) {
   header {
     position: relative;
-    width: 100vw;
+    width: 100%;
   }
   header .header-top {
     background-image: url(/img/home-desktop.jpg);
@@ -946,6 +946,275 @@ header .header-nav .nav-list__link {
   }
   .actualites main .actu__list .box .date-list li {
     line-height: 1.8rem;
+  }
+}
+
+.lvecl {
+  min-height: 100vh;
+  width: 100%;
+}
+
+.lvecl section {
+  padding: 22vh 1.5rem 1rem 1.5rem;
+}
+
+.lvecl section img {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.lvecl section span {
+  display: block;
+  margin-bottom: 1rem;
+  font-family: "Quicksand", sans-serif;
+  font-size: 1.1rem;
+  font-weight: 600;
+  font-style: italic;
+  line-height: 1.4rem;
+  color: #b22222;
+}
+
+.lvecl section p {
+  text-align: justify;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+}
+
+.lvecl section h1 {
+  font-size: 1.5rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #b22222;
+  margin: 1rem 0;
+  display: inline-block;
+  position: relative;
+}
+
+.lvecl section h1 span {
+  display: inline-block;
+  text-transform: lowercase;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+.lvecl section h1 small {
+  display: block;
+  color: #0e0e0e;
+  text-transform: none;
+  position: absolute;
+  bottom: -5px;
+}
+
+.lvecl section #bloc-b {
+  margin-top: .5rem;
+  text-align: right;
+}
+
+.lvecl section #bloc-b small {
+  display: block;
+  color: black;
+  font-style: normal;
+}
+
+.lvecl section #bloc-d {
+  color: #0e0e0e;
+  text-align: left;
+  line-height: 1.4rem;
+}
+
+.lvecl section #bloc-d h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.lvecl section #bloc-d > * {
+  margin-bottom: 1rem;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.lvecl section #bloc-f {
+  font-size: 1.5rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #b22222;
+  margin: 1rem 0;
+}
+
+.lvecl section #bloc-f span {
+  display: inline;
+  text-transform: lowercase;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+.lvecl section #bloc-i {
+  display: block;
+  width: auto;
+  text-align: center;
+}
+
+.lvecl section #bloc-j, .lvecl section #bloc-k, .lvecl section #bloc-l {
+  display: none;
+}
+
+.lvecl footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.lvecl footer .social-icons > * {
+  margin: 1rem;
+  color: #0e0e0e;
+  -webkit-transition: color 250ms ease-in;
+  transition: color 250ms ease-in;
+}
+
+.lvecl footer .social-icons > *:hover {
+  color: #b22222;
+}
+
+@media screen and (min-width: 768px) {
+  .lvecl section {
+    padding: 1.5rem 5rem;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[16];
+        grid-template-columns: repeat(16, 1fr);
+    -ms-grid-rows: (auto)[16];
+        grid-template-rows: repeat(16, auto);
+    grid-gap: 1rem;
+  }
+  .lvecl section #bloc-a {
+    width: auto;
+    margin: 0;
+    font-size: 2rem;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 7;
+    -ms-grid-column-span: 8;
+    grid-area: 1 / 7 / 2 / 15;
+    letter-spacing: .5rem;
+    -ms-grid-column-align: end;
+        justify-self: end;
+  }
+  .lvecl section #bloc-a span {
+    font-size: 1.5rem;
+    margin: 0;
+    letter-spacing: normal;
+  }
+  .lvecl section #bloc-a small {
+    position: relative;
+    font-size: 1.5rem;
+    letter-spacing: normal;
+  }
+  .lvecl section #bloc-b {
+    -ms-grid-row: 6;
+    -ms-grid-row-span: 2;
+    -ms-grid-column: 7;
+    -ms-grid-column-span: 4;
+    grid-area: 6 / 7 / 8 / 11;
+    text-align: left;
+    margin: 0;
+    padding-right: 1.5rem;
+    line-height: 1.6rem;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  .lvecl section #bloc-c {
+    margin: 0;
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 4;
+    -ms-grid-column: 7;
+    -ms-grid-column-span: 8;
+    grid-area: 2 / 7 / 6 / 15;
+  }
+  .lvecl section #bloc-d {
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 4;
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 4;
+    grid-area: 2 / 3 / 6 / 7;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    padding-right: 1.5rem;
+  }
+  .lvecl section #bloc-e {
+    -ms-grid-row: 14;
+    -ms-grid-row-span: 2;
+    -ms-grid-column: 6;
+    -ms-grid-column-span: 5;
+    grid-area: 14 / 6 / 16 / 11;
+  }
+  .lvecl section #bloc-f {
+    -ms-grid-row: 9;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 11;
+    -ms-grid-column-span: 5;
+    grid-area: 9 / 11 / 10 / 16;
+  }
+  .lvecl section #bloc-g {
+    -ms-grid-row: 10;
+    -ms-grid-row-span: 3;
+    -ms-grid-column: 11;
+    -ms-grid-column-span: 5;
+    grid-area: 10 / 11 / 13 / 16;
+  }
+  .lvecl section #bloc-h {
+    -ms-grid-row: 13;
+    -ms-grid-row-span: 2;
+    -ms-grid-column: 11;
+    -ms-grid-column-span: 8;
+    grid-area: 13 / 11 / 15 / 19;
+    margin: 0;
+  }
+  .lvecl section #bloc-i {
+    display: none;
+  }
+  .lvecl section #bloc-j {
+    -ms-grid-row: 6;
+    -ms-grid-row-span: 2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 6;
+    grid-area: 6 / 1 / 8 / 7;
+    margin: 0;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .lvecl section #bloc-k {
+    -ms-grid-row: 6;
+    -ms-grid-row-span: 3;
+    -ms-grid-column: 11;
+    -ms-grid-column-span: 6;
+    grid-area: 6 / 11 / 9 / 17;
+    margin: 5rem 0 0 0;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .lvecl section #bloc-l {
+    -ms-grid-row: 10;
+    -ms-grid-row-span: 4;
+    -ms-grid-column: 4;
+    -ms-grid-column-span: 7;
+    grid-area: 10 / 4 / 14 / 11;
+    -ms-flex-item-align: end;
+        -ms-grid-row-align: end;
+        align-self: end;
   }
 }
 /*# sourceMappingURL=main.css.map */
