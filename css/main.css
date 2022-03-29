@@ -97,7 +97,7 @@ a {
 }
 
 header {
-  background: rgba(247, 247, 247, 0.9);
+  background: rgba(255, 255, 255, 0.9);
   position: fixed;
   width: 100%;
   z-index: 100;
@@ -198,7 +198,7 @@ header .nav-btn small {
 }
 
 header .header-nav {
-  background: rgba(247, 247, 247, 0.9);
+  background: rgba(255, 255, 255, 0.9);
   position: absolute;
   width: 100%;
   height: auto;
@@ -266,6 +266,12 @@ header .header-nav .nav-list__item:hover::after {
 header .header-nav .nav-list__link {
   color: #0e0e0e;
   font-size: 1.5rem;
+}
+
+@media screen and (min-width: 768px) {
+  header .header-nav .nav-list__link {
+    font-size: 2rem;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -851,12 +857,14 @@ header .header-nav .nav-list__link {
   background-image: url(/img/creations/projetv.jpeg);
   background-size: cover;
   background-position: center center;
+  aspect-ratio: none;
 }
 
 .actualites main .actu__list .box-2 {
   background-image: url(/img/creations/ldp.jpeg);
   background-size: cover;
   background-position: center center;
+  aspect-ratio: none;
 }
 
 .actualites main .actu__list .box-2 h2 {

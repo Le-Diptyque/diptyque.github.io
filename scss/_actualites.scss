@@ -73,12 +73,14 @@
                 background-image:url(/img/creations/projetv.jpeg);
                 background-size: cover;
                 background-position: center center;
+                aspect-ratio: none;
             }
 
             .box-2 {
                 background-image:url(/img/creations/ldp.jpeg);
                 background-size: cover;
                 background-position: center center;
+                aspect-ratio: none;
 
                 h2 {
                     color: $myRed;

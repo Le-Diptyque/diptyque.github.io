@@ -1,5 +1,5 @@
 header {
-    background: $bgHeader;
+    background: rgba(255, 255, 255, .9);
     position: fixed;
     width: 100%;
     z-index: 100;
@@ -89,7 +89,7 @@ header {
     }
 
     .header-nav {
-        background: $bgHeader;
+        background: rgba(255, 255, 255, .9);
         position: absolute;
         width: 100%;
         height: auto;
@@ -145,6 +145,18 @@ header {
             &__link {
                 color: $blackText;
                 font-size: 1.5rem;
+            }
+        }
+    }
+}
+
+@include media-md {
+    header{
+        .header-nav{
+            .nav-list{
+                &__link{
+                    font-size: 2rem;
+                }
             }
         }
     }
