@@ -586,7 +586,7 @@ header .header-nav .nav-list__link {
             justify-content: space-evenly;
   }
   .creations main .creations__list .box {
-    max-width: 300px;
+    max-width: 275px;
   }
 }
 
@@ -759,7 +759,7 @@ header .header-nav .nav-list__link {
             justify-content: space-evenly;
   }
   .actions main .creations__list .box {
-    max-width: 300px;
+    max-width: 275px;
   }
 }
 
