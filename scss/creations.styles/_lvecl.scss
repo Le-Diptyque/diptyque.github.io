@@ -203,18 +203,21 @@
             }
 
             #bloc-j {
+                display: block;
                 grid-area: 6 / 1 / 8 / 7;
                 margin: 0;
                 align-items: center;
             }
 
             #bloc-k {
+                display: block;
                 grid-area: 6 / 11 / 9 / 17;
                 margin: 5rem 0 0 0;
                 align-items: center;
             }
 
             #bloc-l {
+                display: block;
                 grid-area: 10 / 4 / 14 / 11;
                 align-self: end;
             }
