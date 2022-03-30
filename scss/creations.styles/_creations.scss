@@ -117,7 +117,7 @@
 
 
         main{
-            padding-top: calc(50vh - 350px);
+            padding-top: calc(50vh - 300px);
             padding-bottom: 1.5rem;
             flex: 1;
             display: flex;
@@ -128,7 +128,7 @@
                 justify-content: space-evenly;
 
                 .box {
-                    max-width: 275px;
+                    max-width: 250px;
                 }
             }
         }

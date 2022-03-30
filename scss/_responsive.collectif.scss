@@ -39,7 +39,9 @@
     }
 
     .collectif__story {
-        padding: 1.5rem;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 2rem ;
         display: grid;
         grid-template-columns: repeat(16, 1fr);
         grid-template-rows: repeat(16, auto);

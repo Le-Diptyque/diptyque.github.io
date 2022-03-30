@@ -1,0 +1,205 @@
+main {
+    min-height: 100vh;
+    width: 100%;
+
+    .lvecs {
+        padding: 22vh 1.5rem 1rem 1.5rem;
+
+        img, video{
+            width: 100%;
+            margin-bottom: 1rem;
+        }
+
+        span {
+            display: block;
+            margin-bottom: 1rem;
+            font-family: $quicksand;
+            font-size: 1rem;
+            font-weight: 600;
+            font-style: italic;
+            line-height: 1.4rem;
+            color: $myRed;
+            text-align: right;
+
+            small {
+                color: $blackText;
+                font-style: normal;
+            }
+        }
+
+        h2 {
+            font-size: 1.5rem;
+            font-family: $roboto;
+            font-weight: 600;
+            
+            color: $myRed;
+            margin: 1rem 0;
+        }
+
+        p {
+            text-align: justify;
+            font-family: $roboto;
+            font-size: 1.1rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .bloc-a {
+            font-size: 1.2rem;
+            font-family: $roboto;
+            font-weight: 600;
+            text-transform: uppercase;
+            color: $myRed;
+            margin: 1rem 0;
+            display: inline-block;
+            position: relative;
+
+            span {
+                display: inline-block;
+                text-transform: lowercase;
+                font-style: normal;
+                font-weight: 700;
+                font-size: 1.2rem;
+            }
+
+            small {
+                display: block;
+                color: $blackText;
+                text-transform: none;
+                position: absolute;
+                bottom: -5px;
+            }
+        }
+
+        .bloc-d {
+            color: $blackText;
+            text-align: left;
+            line-height: 1.4rem;
+
+            h3 {
+                font-size: 1rem;
+                font-weight: 600;
+                text-transform: uppercase;
+            }
+
+            & > * {
+                margin-bottom: 1rem;
+                font-weight: 600;
+                font-size: 1rem;
+            }
+        }
+
+        .bloc-g {
+            h3 {
+                color: $blackText;
+                font-size: 1rem;
+                font-weight: 600;
+                text-transform: uppercase;
+                margin-bottom: .5rem;
+            }
+        }
+
+        .bloc-j {
+            display: none;
+        }
+    }
+
+    footer {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 1rem;
+
+        .social-icons > * {
+            margin: 1rem;
+            color: $blackText;
+            @include transition-color;
+    
+            &:hover {
+                color: $myRed;
+            }
+        }
+
+    }
+
+    @include media-md {
+        .lvecs {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem ;
+            display: grid;
+            grid-template-columns: repeat(16, 1fr);
+            grid-template-rows: repeat(7, auto);
+            grid-gap: 1rem;
+
+            .bloc-a {             
+             width: auto;
+             margin-bottom: 2rem;
+             font-size: 2.2rem;
+             grid-area: 1 / 7 / 2 / 15;
+             letter-spacing: .5rem;
+             justify-self: center;
+
+             span {
+                 font-size: 1.7rem;
+                 margin: 0;
+                 letter-spacing: normal;
+             }
+
+             small {
+                 position: relative;
+                 font-size: 1.5rem;
+                 letter-spacing: normal;
+             }
+            }
+
+            .bloc-b {
+                grid-area: 2 / 10 / 3 / 14;
+                text-align: left;
+                margin: 5rem 0;
+                padding-right: 1.5rem;
+                line-height: 1.8rem;
+                align-self: center;
+            }
+
+            .bloc-c {
+                margin: 0;
+                grid-area: 2 / 1 / 4 / 10;
+            }
+
+            .bloc-d {
+                grid-area: 5 / 1 / 7 / 5;
+                align-self: center;
+                margin-left: 2rem;
+            }
+
+            .bloc-e {
+                grid-area: 4 / 5 / 6 / 10;
+                align-self: center;
+            }
+
+            .bloc-f {
+                grid-area: 5 / 5 / 7 / 9;
+            }
+
+            .bloc-g {
+                grid-area: 5 / 10 / 7 / 17;
+                margin: 5rem 0 0 0 ;
+            }
+            
+            .bloc-h {
+                grid-area: 7 / 10 / 9 / 15;
+                align-self: center;
+            }
+
+            .bloc-i {
+                grid-area: 3 / 10 / 5 / 15;
+                align-self: end;
+            }
+
+            .bloc-j {
+                display: block;
+                margin: 0;
+                grid-area: 6 / 5 / 8 / 10;
+            }
+        }
+    }
+}
