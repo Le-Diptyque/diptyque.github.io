@@ -39,15 +39,10 @@ a {
           flex-direction: column;
 }
 
-.index header .header-top {
-  height: 10vh;
-  width: 100%;
-}
-
 .index header .header-top a {
   display: inline-block;
   width: 100%;
-  height: 100%;
+  min-height: 15vh;
   background-image: url(/img/logo-black.svg);
   background-repeat: no-repeat;
   background-size: contain;
@@ -56,6 +51,7 @@ a {
 
 .index header .header-main {
   height: 30vh;
+  min-height: 150px;
   width: 100%;
   background-image: url(/img/home-desktop.jpg);
   background-size: contain;
@@ -140,15 +136,17 @@ a {
 }
 
 @media screen and (min-width: 768px) {
-  .index header .header-top {
-    height: 15vh;
+  .index header .header-top a {
+    min-height: 23vh;
   }
   .index header .header-main {
     background-image: url(/img/home-desktop-2.jpeg);
-    height: 50vh;
-    background-position: center center;
+    height: 55vh;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    background-position: center top;
     background-size: cover;
-    margin-top: 2rem;
   }
   .index header .header-nav .nav-list {
     -webkit-box-orient: horizontal;
@@ -184,8 +182,9 @@ a {
 
 .index {
   width: 100%;
-  min-height: 100vh;
-  padding: 1rem;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 1rem 1rem 0 1rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -195,7 +194,11 @@ a {
           flex-direction: column;
 }
 
-.index main {
+.index header {
+  min-height: 100vh;
+}
+
+.index footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -205,15 +208,15 @@ a {
   padding: .5rem 0;
 }
 
-.index main .social-icons > * {
-  font-size: 1rem;
+.index footer .social-icons > * {
+  font-size: .8rem;
   margin: 1rem;
   color: #0e0e0e;
   -webkit-transition: color 250ms ease-in;
   transition: color 250ms ease-in;
 }
 
-.index main .social-icons > *:hover {
+.index footer .social-icons > *:hover {
   color: #b22222;
 }
 /*# sourceMappingURL=index.css.map */

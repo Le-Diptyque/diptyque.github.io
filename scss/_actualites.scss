@@ -3,7 +3,7 @@
     width: 100%;
 
     main {
-        padding-top: 25vh;
+        padding-top: 30vh;
 
         .actu__list {
             display: flex;
@@ -17,8 +17,6 @@
                 aspect-ratio: 1;
                 margin: 1rem;
                 padding: 1rem;
-                border-radius: 5px;
-                box-shadow: 0 10px 15px -3px rgba(0, 0, 0, .8);
                 color: white;      
                 display: flex;
                 flex-direction: column;
@@ -149,3 +147,4 @@
         }
     }
 }
+

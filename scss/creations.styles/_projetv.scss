@@ -1,0 +1,166 @@
+main {
+    min-height: 100vh;
+    width: 100%;
+
+    .projetv {
+        padding: 30vh 1.5rem 1rem 1.5rem;
+
+        img {
+            width: 100%;
+            margin-bottom: 1rem;
+        }
+
+        p {
+            text-align: justify;
+            font-family: $roboto;
+            font-size: 1rem;
+            line-height: 1.4rem;
+            margin-bottom: 1rem;
+        }
+
+        .bloc-a {
+            font-size: 1.2rem;
+            font-family: $roboto;
+            font-weight: 600;
+            text-transform: uppercase;
+            color: $myRed;
+            margin: 2rem 0;
+            display: block;
+            position: relative;
+            
+            small {
+                display: block;
+                color: $blackText;
+                text-transform: none;
+                position: absolute;
+                bottom: -15px;
+            }
+        }
+
+        .bloc-b {
+            display: block;
+            margin-top: 1rem;
+            font-family: $quicksand;
+            font-size: 1rem;
+            font-weight: 600;
+            font-style: italic;
+            line-height: 1.4rem;
+            color: $myRed;
+            text-align: right;
+            padding-left: 25%;
+
+            small {
+                color: $blackText;
+                font-style: normal;
+                display: block;
+            }
+        }
+
+        .bloc-d {
+            color: $blackText;
+            text-align: left;
+            line-height: 1.4rem;
+
+            h3 {
+                font-size: 1rem;
+                font-weight: 600;
+                text-transform: uppercase;
+            }
+
+            & > * {
+                margin-bottom: 1rem;
+                font-weight: 600;
+                font-size: 1rem;
+            }
+        }
+
+        .bloc-f {
+            font-size: 1.2rem;
+            font-family: $roboto;
+            font-weight: 600;
+            text-transform: uppercase;
+            color: $myRed;
+            margin-bottom: 1rem;
+            display: block;
+            
+            span {
+                display: block;
+                text-transform: none;
+            }
+        }
+
+        .bloc-i {
+            font-size: 1.2rem;
+            font-family: $roboto;
+            font-weight: 600;
+            text-transform: uppercase;
+            color: $myRed;
+            margin-bottom: 1rem;
+            display: inline-block;
+            
+            span {
+                text-transform: none;
+            } 
+        }
+    }
+
+    footer {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 1rem;
+
+        .social-icons > * {
+            margin: 1rem;
+            color: $blackText;
+            @include transition-color;
+    
+            &:hover {
+                color: $myRed;
+            }
+        }
+
+    }
+
+    @include media-md {
+        .projetv {
+
+            }
+
+        .bloc-b {
+
+        }
+
+        .bloc-c {
+
+        }
+
+        .bloc-d {
+
+        }
+
+        .bloc-e {
+
+        }
+
+        .bloc-f {
+
+        }
+
+        .bloc-g {
+
+        }
+        
+        .bloc-h {
+
+        }
+
+        .bloc-i {
+
+        }
+
+        .bloc-j {
+
+        }
+    
+    }
+}

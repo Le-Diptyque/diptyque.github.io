@@ -2,15 +2,17 @@
     .index{
         header {
             .header-top {
-                height: 15vh;
+                a {
+                    min-height: 23vh;
+                }
             }
     
             .header-main {
                 background-image: url(/img/home-desktop-2.jpeg);
-                height: 50vh;
-                background-position: center center;
+                height: 55vh;
+                align-self: center;
+                background-position: center top;
                 background-size: cover;
-                margin-top: 2rem;
             }
     
             .header-nav {

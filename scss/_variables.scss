@@ -19,6 +19,12 @@ $shadowBlackLight: 0 3px 5px rgba(0, 0, 0, 0.5), 0 4px 5px rgba(0, 0, 0, 0.5);
     height 250ms ease-out;
 }
 
+@mixin media-sm {
+    @media (min-width: 350px) {
+        @content;
+    }
+}
+
 @mixin media-md {
     @media screen and (min-width: 768px){
         @content;
