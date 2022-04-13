@@ -3,12 +3,13 @@
     width: 100%;
 
     main {
-        padding-top: 30vh;
+        padding-top: 25vh;
 
         .creations__list {
             display: flex;
             justify-content: center;
             flex-wrap: wrap;
+            padding-bottom: 5rem;
 
             .box {
                 position: relative;
@@ -97,7 +98,10 @@
     footer {
         display: flex;
         justify-content: center;
-        margin: 1rem 0;
+
+        .social-icons {
+            margin-bottom: 2rem;
+        }
 
         .social-icons > * {
             margin: 1rem;
@@ -130,7 +134,7 @@
                 justify-content: space-evenly;
 
                 .box {
-                    max-width: 250px;
+                    max-width: 350px;
 
                     .bg {
                         opacity: 1;

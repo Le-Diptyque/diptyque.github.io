@@ -5,16 +5,12 @@
 
 .index {
     width: 100%;
-    max-width: 1100px;
     margin: 0 auto;
     padding: 1rem 1rem 0 1rem;
     display: flex;
     flex-direction: column;
 
-    header {
-        min-height: 100vh;
-    }
-
+    
     footer {
         display: flex;
         justify-content: center;
@@ -30,6 +26,12 @@
                 color: $myRed;
             }
         }
+    }
+}
+
+@include media-md {
+    .index {
+        padding: 0;
     }
 }
 

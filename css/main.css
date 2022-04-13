@@ -32,7 +32,7 @@ a {
 }
 
 .collectif__story {
-  padding: 30vh 1.5rem 1rem 1.5rem;
+  padding: 25vh 1.5rem 1rem 1.5rem;
 }
 
 .collectif__story h1 {
@@ -109,7 +109,7 @@ header .header-top {
 
 header .header-top a {
   display: block;
-  height: 23vh;
+  height: 15vh;
   width: 100%;
   background-image: url(/img/logo-black.svg);
   background-repeat: no-repeat;
@@ -269,6 +269,9 @@ header .header-nav .nav-list__link {
 }
 
 @media screen and (min-width: 768px) {
+  header .header-top a {
+    height: 23vh;
+  }
   header .header-nav .nav-list__link {
     font-size: 1.5rem;
   }
@@ -435,7 +438,7 @@ header .header-nav .nav-list__link {
 }
 
 .creations main {
-  padding-top: 30vh;
+  padding-top: 25vh;
 }
 
 .creations main .creations__list {
@@ -447,6 +450,7 @@ header .header-nav .nav-list__link {
           justify-content: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  padding-bottom: 5rem;
 }
 
 .creations main .creations__list .box {
@@ -545,7 +549,10 @@ header .header-nav .nav-list__link {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin: 1rem 0;
+}
+
+.creations footer .social-icons {
+  margin-bottom: 2rem;
 }
 
 .creations footer .social-icons > * {
@@ -590,7 +597,7 @@ header .header-nav .nav-list__link {
             justify-content: space-evenly;
   }
   .creations main .creations__list .box {
-    max-width: 250px;
+    max-width: 350px;
   }
   .creations main .creations__list .box .bg {
     opacity: 1;
@@ -621,7 +628,7 @@ header .header-nav .nav-list__link {
 }
 
 .actions main {
-  padding-top: 30vh;
+  padding-top: 25vh;
 }
 
 .actions main .creations__list {
@@ -768,7 +775,7 @@ header .header-nav .nav-list__link {
             justify-content: space-evenly;
   }
   .actions main .creations__list .box {
-    max-width: 250px;
+    max-width: 300px;
   }
   .actions main .creations__list .box .bg {
     opacity: 1;
@@ -982,7 +989,7 @@ header .header-nav .nav-list__link {
 }
 
 .lvecl section {
-  padding: 30vh 1.5rem 1rem 1.5rem;
+  padding: 25vh 1.5rem 1rem 1.5rem;
 }
 
 .lvecl section img {
@@ -1257,7 +1264,7 @@ main {
 }
 
 main .lvecs {
-  padding: 30vh 1.5rem 1rem 1.5rem;
+  padding: 25vh 1.5rem 1rem 1.5rem;
 }
 
 main .lvecs img, main .lvecs video {
@@ -1506,7 +1513,7 @@ main {
 }
 
 main .projetv {
-  padding: 30vh 1.5rem 1rem 1.5rem;
+  padding: 25vh 1.5rem 1rem 1.5rem;
 }
 
 main .projetv img {

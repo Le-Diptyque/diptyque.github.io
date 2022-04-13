@@ -10,7 +10,7 @@ header {
 
     .header-top a {
         display: block;
-        height: 23vh;
+        height: 15vh;
         width: 100%;
         background-image: url(/img/logo-black.svg);
         background-repeat: no-repeat;
@@ -152,6 +152,10 @@ header {
 
 @include media-md {
     header{
+        .header-top a {
+            height: 23vh;
+        }
+
         .header-nav{
             .nav-list{
                 &__link{
