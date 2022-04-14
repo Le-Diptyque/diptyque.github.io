@@ -123,44 +123,96 @@ main {
 
     @include media-md {
         .projetv {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem ;
+            display: grid;
+            grid-template-columns: repeat(16, 1fr);
+            grid-template-rows: repeat(16, auto);
+            grid-gap: 1rem;
+            align-items: center;
 
+            .bloc-a {
+                margin: 0;
+                grid-area: 1 / 7 / 2 / 11;
+                display: inline-block;
+                font-size: 3rem;
+                margin-bottom: 5rem;
+
+                small {
+                    bottom: auto;
+                    font-size: 2rem;
+                }
             }
-
-        .bloc-b {
-
-        }
-
-        .bloc-c {
-
-        }
-
-        .bloc-d {
-
-        }
-
-        .bloc-e {
-
-        }
-
-        .bloc-f {
-
-        }
-
-        .bloc-g {
-
-        }
-        
-        .bloc-h {
-
-        }
-
-        .bloc-i {
-
-        }
-
-        .bloc-j {
-
-        }
     
+    
+            .bloc-b {
+                grid-area: 2 / 13 / 4 / 17;
+                margin: 0;
+                text-align: left;
+                align-self: start;
+                font-size: 2rem;
+                line-height: normal;
+            }
+    
+            .bloc-c {
+                margin: 0;
+                grid-area: 4 / 1 / 6 / 10;
+            }
+    
+            .bloc-d {
+                grid-area: 2 / 1 / 4 / 5;
+                margin: 0;
+            }
+    
+            .bloc-e {
+                display: none;
+                margin: 0;
+            }
+    
+            .bloc-f {
+                grid-area: 4 / 10 / 5 / 17;
+                margin: 0;
+                display: inline;
+                font-size: 1.8rem;
+                align-self: end;
+
+                span {
+                    display: inline;
+                }
+            }
+    
+            .bloc-g {
+                grid-area: 5 / 10 / 6 / 17;
+                margin: 0;
+                align-self: start;
+                font-size: 1.2rem;
+            }
+            
+            .bloc-h {
+                grid-area: 2 / 5 / 4 / 14;
+                margin: 0;
+            }
+    
+            .bloc-i {
+                display: none;
+                margin: 0;
+            }
+    
+            .bloc-j {
+                display: none;
+                margin: 0;
+            }
+    
+            .bloc-k {
+                display: none;
+                margin: 0;
+            }
+    
+            .bloc-l {
+                display: none;
+                margin: 0;
+            }
+        }    
     }
 }
