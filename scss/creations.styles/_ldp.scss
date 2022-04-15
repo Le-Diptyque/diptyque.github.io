@@ -2,7 +2,7 @@ main {
     min-height: 100vh;
     width: 100%;
 
-    .projetv {
+    .ldp {
         padding: 25vh 1.5rem 1rem 1.5rem;
 
         img {
@@ -39,7 +39,7 @@ main {
 
         .bloc-b {
             display: block;
-            margin-top: 1rem;
+            margin: 1.5rem 0;
             font-family: $quicksand;
             font-size: 1rem;
             font-weight: 600;
@@ -47,13 +47,20 @@ main {
             line-height: 1.4rem;
             color: $myRed;
             text-align: right;
-            padding-left: 25%;
 
             small {
                 color: $blackText;
                 font-style: normal;
                 display: block;
             }
+        }
+
+        .bloc-c, .bloc-e, .bloc-g, .bloc-i {
+            margin-bottom: 1.5rem;
+
+            img {
+                margin: 0;
+            }            
         }
 
         .bloc-d {
@@ -65,6 +72,10 @@ main {
                 font-size: 1rem;
                 font-weight: 600;
                 text-transform: uppercase;
+
+                span {
+                    text-transform: none;
+                }
             }
 
             & > * {
@@ -75,45 +86,33 @@ main {
         }
 
         .bloc-f {
-            font-size: 1.2rem;
-            font-family: $roboto;
-            font-weight: 600;
-            text-transform: uppercase;
-            color: $myRed;
-            margin-bottom: 1rem;
-            display: block;
-            
+
+            h2 {
+                font-size: 1.2rem;
+                font-family: $roboto;
+                font-weight: 600;
+                text-transform: uppercase;
+                color: $myRed;
+                margin-bottom: .5rem;
+                display: block;
+            }
+
             span {
                 display: block;
                 text-transform: none;
             }
         }
 
-        .bloc-i {
-            font-size: 1.2rem;
-            font-family: $roboto;
+        .bloc-h {
+            color: $blackText;
+            text-align: left;
             font-weight: 600;
-            text-transform: uppercase;
-            color: $myRed;
-            margin-bottom: 1rem;
-            display: inline-block;
-            
-            span {
-                text-transform: none;
-            } 
         }
 
-        .bloc-m {
+        .bloc-i {
             display: none;
         }
 
-        .bloc-n {
-            display: none;
-        }
-
-        .bloc-f {
-            display: none;
-        }
     }
 
     footer {
@@ -134,19 +133,19 @@ main {
     }
 
     @include media-md {
-        .projetv {
+        .ldp {
             max-width: 1200px;
             margin: 0 auto;
             padding: 2rem ;
             display: grid;
-            grid-template-columns: repeat(16, 1fr);
+            grid-template-columns: repeat(15, 1fr);
             grid-template-rows: repeat(16, auto);
             grid-gap: 1rem;
             align-items: center;
 
             .bloc-a {
                 margin: 0;
-                grid-area: 1 / 7 / 2 / 11;
+                grid-area: 1 / 8 / 2 / 17;
                 display: inline-block;
                 font-size: 3rem;
                 margin: 5rem 0;
@@ -159,84 +158,46 @@ main {
     
     
             .bloc-b {
-                grid-area: 2 / 13 / 4 / 17;
+                grid-area: 3 / 1 / 4 / 5;
                 margin: 0;
                 text-align: left;
-                align-self: start;
-                font-size: 2rem;
-                line-height: normal;
+                padding-right: 5rem;
             }
     
             .bloc-c {
+                grid-area: 2 / 8 / 4 / 16;
                 margin: 0;
-                grid-area: 4 / 1 / 6 / 10;
             }
     
             .bloc-d {
-                grid-area: 2 / 1 / 4 / 5;
+                grid-area: 2 / 5 / 4 / 8;
                 margin: 0;
             }
     
             .bloc-e {
-                grid-area: 11 / 7 / 13 / 12;
+                grid-area: 5 / 1 / 7 / 8;
                 margin: 0;
             }
     
             .bloc-f {
-                grid-area: 4 / 10 / 5 / 17;
-                margin: 0;
-                display: inline;
-                font-size: 1.8rem;
-                align-self: end;
-
-                span {
-                    display: inline;
-                }
+                grid-area: 4 / 8 / 6 / 16;
+                margin-top: 2rem;
             }
     
             .bloc-g {
-                grid-area: 5 / 10 / 6 / 17;
+                grid-area: 6 / 8 / 9 / 13;
                 margin: 0;
-                align-self: start;
             }
             
             .bloc-h {
-                grid-area: 2 / 5 / 4 / 14;
+                grid-area: 4 / 5 / 5 / 7;
                 margin: 0;
             }
-    
+
             .bloc-i {
-                grid-area: 6 / 12 / 7 / 17;
-                margin: 0;
-                font-size: 1.8rem;
-            }
-    
-            .bloc-j {
-                grid-area: 7 / 12 / 8 / 17;
-                margin: 0;
-            }
-    
-            .bloc-k {
-                grid-area: 8 / 12 / 9 / 17;
-                margin: 0;
-            }
-    
-            .bloc-l {
-                grid-area: 9 / 7 / 11 / 12;
-                margin: 0;
-            }
-
-            .bloc-m {
                 display: block;
-                grid-area: 6 / 3 / 9 / 12;
-                margin: 0;
+                grid-area: 7 / 4 / 9 / 8;
             }
-
-            .bloc-n {
-                display: block;
-                grid-area: 9 / -6 / 11 / -1;
-                margin: 0;
-            }
-        }    
+        }
     }
 }

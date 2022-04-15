@@ -43,7 +43,7 @@ a {
 .index header .header-top a {
   display: inline-block;
   width: 100%;
-  min-height: 15vh;
+  min-height: 10vh;
   background-image: url(/img/logo-black.svg);
   background-repeat: no-repeat;
   background-size: contain;
@@ -51,7 +51,7 @@ a {
 }
 
 .index header .header-main {
-  height: 30vh;
+  height: 15vh;
   min-height: 150px;
   width: 100%;
   background-image: url(/img/home-desktop.jpg);

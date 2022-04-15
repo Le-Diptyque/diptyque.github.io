@@ -10,7 +10,7 @@ header {
 
     .header-top a {
         display: block;
-        height: 15vh;
+        height: 10vh;
         width: 100%;
         background-image: url(/img/logo-black.svg);
         background-repeat: no-repeat;
@@ -19,7 +19,7 @@ header {
     }
 
     .nav-btn {
-        margin: 0 auto 1.5rem auto;
+        margin: 1rem auto 1.5rem auto;
         width: 2rem;
         height: 2rem;
         position: relative;
@@ -153,7 +153,7 @@ header {
 @include media-md {
     header{
         .header-top a {
-            height: 23vh;
+            height: 17vh;
         }
 
         .header-nav{
