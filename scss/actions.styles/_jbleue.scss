@@ -1,0 +1,147 @@
+main {
+    min-height: 100vh;
+    width: 100%;
+
+    .jbleue {
+        padding: 25vh 1.5rem 1rem 1.5rem;
+
+        img {
+            width: 100%;
+            margin-bottom: 1rem;
+        }
+
+        p {
+            text-align: justify;
+            font-family: $roboto;
+            font-size: 1rem;
+            line-height: 1.4rem;
+            margin-bottom: 1rem;
+        }
+
+        .bloc-a {
+            font-size: 1.2rem;
+            font-family: $roboto;
+            font-weight: 600;
+            text-transform: uppercase;
+            color: $myRed;
+            margin: 2rem 0;
+            display: block;
+            position: relative;
+            text-align: right;
+            
+            small {
+                display: block;
+                color: $blackText;
+                text-transform: none;
+                position: absolute;
+                bottom: -15px;
+                right: 0;
+            }
+        }
+
+        .bloc-b {
+            display: block;
+            margin: 1.5rem 0;
+            font-family: $quicksand;
+            font-size: 1rem;
+            font-weight: 600;
+            font-style: italic;
+            line-height: 1.4rem;
+            color: $myRed;
+            text-align: right;
+
+            small {
+                color: $blackText;
+                font-style: normal;
+                display: block;
+            }
+        }
+
+        .bloc-d {
+            h3 {
+                font-size: 1.2rem;
+                font-family: $roboto;
+                font-weight: 600;
+                text-transform: uppercase;
+                color: $myRed;
+                margin: 1.5rem 0 1rem 0;
+                display: block;
+                position: relative;
+            }
+        }
+
+    }
+
+    footer {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 1rem;
+
+        .social-icons > * {
+            margin: 1rem;
+            color: $blackText;
+            @include transition-color;
+    
+            &:hover {
+                color: $myRed;
+            }
+        }
+
+    }
+
+    @include media-md {
+        .jbleue {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem ;
+            display: grid;
+            grid-template-columns: repeat(8, 1fr);
+            grid-template-rows: repeat(8, auto);
+            grid-gap: 2.5rem;
+            align-items: center;
+
+            .bloc-a {
+                margin: 0;
+                grid-area: 1 / 3 / 2 / 7;
+                display: inline-block;
+                font-size: 3rem;
+                margin: 5rem 0;
+                justify-content: end;
+
+                small {
+                    bottom: auto;
+                    font-size: 2rem;
+                }
+            }
+    
+    
+            .bloc-b {
+                grid-area: 2 / 7 / 4 / 9;
+                margin: 0;
+                text-align: left;
+                font-size: 2rem;
+                line-height: normal;
+            }
+    
+            .bloc-c {
+                grid-area: 2 / 2 / 4 / 7;
+                margin: 0;
+            }
+    
+            .bloc-d {
+                grid-area: 4 / 5 / 6 / 9;
+                margin: 0;
+            }
+    
+            .bloc-e {
+                grid-area: 6 / 5 / 8 / 8;
+                margin: 0;
+            }
+    
+            .bloc-f {
+                grid-area: 4 / 1 / 6 / 5;
+                margin: 0;
+            }
+        }
+    }
+}
