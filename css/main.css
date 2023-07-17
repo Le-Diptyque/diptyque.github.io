@@ -367,22 +367,22 @@ header .header-nav .nav-list__link {
   font-weight: 400;
 }
 .creations main .creations__list .box-1 .bg {
-  background-image: url(../../img/creations/lvecfl.jpg);
+  background-image: url(../img/creations/lvecfl.jpg);
   background-size: cover;
   background-position: center center;
 }
 .creations main .creations__list .box-2 .bg {
-  background-image: url(../../img/creations/lvecfs.png);
+  background-image: url(../img/creations/lvecfs.png);
   background-size: cover;
   background-position: center center;
 }
 .creations main .creations__list .box-3 .bg {
-  background-image: url(../../img/creations/projetv.jpeg);
+  background-image: url(../img/creations/projetv.jpeg);
   background-size: cover;
   background-position: center center;
 }
 .creations main .creations__list .box-4 .bg {
-  background-image: url(../../img/creations/ldp.jpeg);
+  background-image: url(../img/creations/ldp.jpeg);
   background-size: cover;
   background-position: center center;
 }
@@ -618,13 +618,13 @@ header .header-nav .nav-list__link {
   color: #b22222;
 }
 .actualites main .actu__list .box-1 {
-  background-image: url(/img/creations/projetv.jpeg);
+  background-image: url(../img/creations/projetv.jpeg);
   background-size: cover;
   background-position: center center;
   aspect-ratio: 0;
 }
 .actualites main .actu__list .box-2 {
-  background-image: url(/img/creations/ldp.jpeg);
+  background-image: url(../img/creations/ldp.jpeg);
   background-size: cover;
   background-position: center center;
   aspect-ratio: 0;
