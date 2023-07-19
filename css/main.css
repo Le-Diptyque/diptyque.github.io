@@ -218,7 +218,7 @@ header .header-nav .nav-list__link {
 @media screen and (min-width: 768px) {
   .collectif .header-top {
     height: 27vh;
-    background-image: url(/img/home-desktop-2.jpeg);
+    background-image: url(../img/home-desktop-2.jpeg);
     background-size: cover;
     background-position: center bottom;
   }
@@ -226,7 +226,7 @@ header .header-nav .nav-list__link {
     background: #010101;
     height: 17vh;
     width: 100%;
-    background-image: url(/img/logo-white.svg);
+    background-image: url(../img/logo-white.svg);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center center;
